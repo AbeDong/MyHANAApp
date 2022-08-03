@@ -1,0 +1,35 @@
+POST http://localhost:4004/catalog/POST_HEADER_API HTTP/1.1
+Content-Type: application/json
+
+{
+    "ID":1,
+    "data" : [
+    {
+        "ID":5,
+        "PARTNER":"0100000005",
+        "LOG_DATE":"2022-04-29T00:00:00Z",
+        "BPCOUNTRY_code":"CN"
+    },
+    {
+        "ID":6,
+        "PARTNER":"0100000006",
+        "LOG_DATE":"2022-04-29T00:00:00Z",
+        "BPCOUNTRY_code":"JP"
+    }
+    ]
+}
+
+
+###
+get http://localhost:4004/catalog/$metadata
+
+
+
+###
+get http://localhost:4004/catalog/Interactions_Header
+
+
+
+###
+Get http://localhost:4004/catalog/sleep() 
+
