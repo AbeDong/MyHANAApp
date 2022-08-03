@@ -13,6 +13,8 @@ service CatalogService {
 
     function sleep() returns Boolean;
 
+    function fun_test() returns Boolean;
+
     action POST_HEADER_API(ID : Integer, data : many Interactions_Header) returns array of Interactions_Header;
 
     @read_only
