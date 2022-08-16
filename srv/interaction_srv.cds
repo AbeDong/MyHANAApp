@@ -16,6 +16,7 @@ service CatalogService {
     function fun_test() returns Boolean;
     
     action POST_HEADER_API(ID : Integer, data : many Interactions_Header) returns array of Interactions_Header;
+    action Delete_HEADER_API(ID : Integer) returns Boolean;
 
     @read_only
     entity V_Interaction 
